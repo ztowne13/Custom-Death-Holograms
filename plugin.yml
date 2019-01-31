@@ -1,0 +1,9 @@
+name: CustomDeathHolograms
+author: Ztowne13
+version: 1.2
+description: Plugin that creates a 100% customizable hologram at the death of the player.
+main: me.ztowne13.deathholograms.DeathHolograms
+softdepend: [ItemKills,HolographicDisplays,IndividualHolograms]
+commands:
+  DeathHolograms:
+    description: All commands for the CustomDeathHolograms plugin.

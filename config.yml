@@ -1,0 +1,65 @@
+#########################################################################################
+#											#
+#				Custom Death Holograms					#
+#	     			   By: Ztowne13						#
+#											#
+#########################################################################################
+
+# Use the '&' symbol followed be letters a-f or numbers 0-9 to create a chat color.
+
+# In seconds, how long would you like the hologram to remain?
+
+hologram-length: 5
+
+# How would you like the death holograms to be formatted?
+# PlaceHolders:
+#
+# {killer} - The killer who killed the player.
+# {player} - The player who died.
+#
+# {playerHead} - Display the player's head. (NOTE: YOU CANNOT HAVE ANY OTHER TEXT ON A LINE CONTAINING THIS VARIABLE)
+# {killerHead} - Display the killer's head. (NOTE: YOU CANNOT HAVE ANY OTHER TEXT ON A LINE CONTAINING THIS VARIABLE)
+#
+# {remainingHealth} - Display the killer's remaining health.
+# {killedItemWith} - Displays the item the player was killed with. (NOTE: YOU CANNOT HAVE ANY OTHER TEXT ON A LINE CONTAINING THIS VARIABLE)
+#
+# Requires ItemKills:
+# {killsOnItem} - Display the kills on the killer's item in hand. (REQUIRES THE PLUGIN: ItemKills)
+
+# For each hologram the permission is customholograms.(Hologram Name). If the person has the permission, that holo will be displayed.
+
+Holograms:
+  Member:
+    - '{playerHead}'
+    - '{player}'
+  Hologram1:
+    - '{playerHead}'
+    - '&6[-----------]'
+    - '&e- &7{player} &e-'
+    - '&6[-----------]'
+  Hologram2:
+    - '{playerHead}'
+    - '&4&l[-----------]'
+    - '&e- &7{player} &e-'
+    - '&aDied To'
+    - '&c&l{killer}'
+    - '&4&l[-----------]'
+  Hologram3:
+    - '&0----------'
+    - '&e{killer}'
+    - '&aKilled'
+    - '&b{player}'
+    - '&0----------'
+  FunHologram:
+    - '{playerHead}'
+    - '&edied to'
+    - '{killerHead}'
+  ItemKills:
+    - '&a&l{player}'
+    - '&edied to'
+    - '&c&l{killer} &4with &c&l{remainingHealth} &4hearts left'
+    - '&eUsing'
+    - '{killedItemWith}'
+    - 'with {killsOnItem} kills'
+   
+    
